@@ -11,11 +11,12 @@ body {
 header {
     height: 80px;
     background-color: aquamarine;
-    justify-content: end;
+    max-width: 100%;
 }
 
 menu li{
     list-style: none;
+    padding: 1%;
 }
 
 footer {
