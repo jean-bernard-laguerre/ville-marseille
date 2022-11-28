@@ -10,13 +10,14 @@ body {
 }
 
 header {
+    z-index: 2;
     height: 400px;
     justify-content: end;
     background-image: url(https://www.departement13.fr/uploads/tx_cg13profils/marseille1-7.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    box-shadow: 0px 4px 16px 0px rgb(0 0 0 / 25%);
+    box-shadow: 0px 4px 16px 0px rgb(0 0 0 / 33%);
 }
 
 nav {
@@ -45,6 +46,7 @@ nav {
 }
 
 .menu_button {
+    transition: .3s;
     background-color: inherit;
     font-size: large;
     color: inherit;
