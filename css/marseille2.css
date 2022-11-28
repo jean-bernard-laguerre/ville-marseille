@@ -1,0 +1,42 @@
+main {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Marseille_-_vieille_carte.jpg/1200px-Marseille_-_vieille_carte.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.Rédaction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 10px solid white;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border-bottom-width: 60px; 
+    width: 80%;
+    min-height: 20%;
+    border-top: 10%;
+    margin: 10%;
+    margin-right: 10%;
+    filter: drop-shadow(0 -6mm 4mm rgb(48, 42, 49));
+}
+
+
+.ref{
+    gap: 1em;
+    padding: 30px;
+    min-height: 30px;
+    height: 10%;
+}
+
+.contenue{
+    padding: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
