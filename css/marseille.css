@@ -8,6 +8,7 @@ a {text-decoration: none; color: inherit;}
 body {
     margin: 0;
     min-height: 100vh;
+    overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -62,6 +63,8 @@ nav {
 }
 
 .menu_content {
+    animation: slide 300ms ease-in-out forwards;
+    transform-origin: top center;
     display: none;
     text-align: end;
     position: absolute;
@@ -79,12 +82,11 @@ nav {
 }
 
 .menu:hover .menu_content{
-    display: flex;
-    flex-direction: column;
-
+    display: block;
 }
 
 .menu_content a{
+    display: block;
     padding: 8%;
     text-decoration: none;
     color: inherit;
@@ -104,10 +106,10 @@ footer {
     align-items: center;
 }
 
-#Logo, #Credits, #Liens {
+footer div{
     text-align: center;
     align-items: center;
-    margin: 5% 0;
+    margin: 3% 0;
     color: white;
     min-width: 300px;
 }
@@ -118,4 +120,15 @@ footer {
 
 #Liens img {
     height: 50px;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translate(100%, 0%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0%, 0%);
+    }
 }
