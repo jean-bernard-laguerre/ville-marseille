@@ -1,7 +1,9 @@
 .flex {display: flex;}
 .col {flex-direction: column;}
 .wrap {flex-wrap: wrap;}
+
 main {flex: 1;}
+a {text-decoration: none; color: inherit;}
 
 body {
     margin: 0;
@@ -88,14 +90,32 @@ nav {
     color: inherit;
 }
 
-.menu_content a:hover{
+.menu_content a:hover, footer a:hover{
     color: #00a1d5;
 }
 
 /* Footer */
 
 footer {
-    height: 80px;
-    background-color: darkcyan;
+    min-height: 250px;
+    background-color: rgb(32, 32, 32);
     box-shadow: 0px -4px 16px 0px rgb(0 0 0 / 25%);
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Logo, #Credits, #Liens {
+    text-align: center;
+    align-items: center;
+    margin: 5% 0;
+    color: white;
+    min-width: 300px;
+}
+
+#Logo img {
+    height: 80px;
+}
+
+#Liens img {
+    height: 50px;
 }
