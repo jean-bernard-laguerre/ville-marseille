@@ -49,12 +49,18 @@ section {
     overflow-x: scroll;
     margin: 5%;
     padding: 2%;
+    height: fit-content;
 }
 
 #actu article {
-    height: clamp(300px, 30vh, 450px);
+    height: clamp(300px, fit-content, 900px);
     width: clamp(200px, 20vw, 325px);
     box-shadow: 0px 0px 16px 5px rgb(0 0 0 / 7.5%);
     min-width: 200px;
     margin: 1% 3%;
 }
+
+#actu article img {
+    width: 100%;
+}
+
