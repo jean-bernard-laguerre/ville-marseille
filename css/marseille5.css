@@ -1,14 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-main {
-  background-color:#0131B4;
-  color: white;
-}
-
-section {
-  margin: 0 5%;
-}
-
+main { background:rgb(30,30,40); }
 form { max-width:420px; margin:50px auto; }
 
 .feedback-input {
@@ -51,5 +43,9 @@ textarea {
   margin-top:-4px;
   font-weight:700;
 }
-
 [type="submit"]:hover { background:#EDEDED; }
+
+body {
+
+    color: white;
+}
