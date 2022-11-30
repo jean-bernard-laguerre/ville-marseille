@@ -1,35 +1,125 @@
 .intro{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 20px solid white;
+    border-radius: 10px;
+    background-color: white;
+    padding: 30px;
+    margin: 5% 20%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.6);
+    border-width: 1px;
+    width: fit-content;
+    padding-top: 40px;
 }
 
-.plage_prado{
-    text-align: center;
+main{
+    background-color:rgb(34, 34, 34);
+}
+
+.plage_prado img {
+    width: 80%;
+}
+
+.Liste-de-choses{
+    display:flex;
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: first baseline;
 }
 
 .plage_du_catalan{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 .plage_du_prophete{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 .pointe_rouge{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 .baie_des_singes{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 .malmousque{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 .anse-de-la-maronaise{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
-.introduction{
-    text-align: center;
+.Boutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 1% 5%;
+    border-radius: 10px;
+    background-color: rgb(15, 15, 15, 0.85);
+    margin: 10px;
+    box-shadow: 0 3px 10px rgb(15, 15, 15, 0.85);
+    color: white;
+    border-width: 1px;
+    width: fit-content;
+}
+
+.img{
+    border-radius: 10px;
+}
+
+.div{
+    padding: 10px;
+}
+
+main section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid rgb(15, 15, 15, 0.85);
+    border-width: 10px;
+    background-color: khaki;
+    border-style: dashed;
+    padding: 10px;
+    margin: 10px;
+    opacity: 0.9;
+    border-radius: 10px;
+}
+main section img {
+    flex: 1;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+}
+
+main section div {
+    flex: 1;
+}
+
+.Boutton:hover{
+  background-color: #555555;
+  color: white;
 }
