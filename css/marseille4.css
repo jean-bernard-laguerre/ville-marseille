@@ -71,7 +71,7 @@ main{
     flex-direction: row;
 }
 
-.Boutton{
+.Bouton{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,7 +124,7 @@ main section div {
     flex: 1;
 }
 
-.Boutton:hover{
+.Bouton:hover{
   background-color: #555555;
   color: white;
 }
