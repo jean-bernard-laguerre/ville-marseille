@@ -7,8 +7,34 @@ main img {
     max-height: 600px;
     object-fit: cover;
 }
+
+aside {
+    position: sticky;
+    top: 8%;
+    background-color: white;
+    color: black;
+    border-width: 8px;
+    border-color: #00a1d5;
+    border-style: double;
+    height: fit-content;
+    max-width: 250px;
+    text-align: start;
+    flex: 2;
+    margin:  60px 1%;
+    padding: 2%;
+}
+
+#Contenu {
+    flex: 8;
+}
+
+aside a {
+    width: 100%;
+    height: 45px;
+}
+
 section {
-    margin: 3% 8%;
+    margin: 2% 4%;
     text-align: center;
     color: white;
 }
@@ -16,6 +42,9 @@ section {
 article {
     box-shadow: 0px 0px 16px 5px rgb(0 0 0 / 50%);
     background-color: white;
+    border-width: 8px;
+    border-color: #00a1d5;
+    border-style: double;
     color: black;
     text-align: start;
     display: flex;
@@ -24,5 +53,5 @@ article {
 }
 
 article div{
-    padding: 2%;
+    padding: 0 2%;
 }
