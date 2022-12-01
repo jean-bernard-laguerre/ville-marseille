@@ -4,6 +4,8 @@
 
 main {flex: 1;}
 a {text-decoration: none; color: inherit;}
+h1 {text-align: center; font-size: clamp(2em, 2.5vw, 4em);}
+h2 {text-align: center; font-size: clamp(1.5em, 1.75vw, 3em);}
 
 body {
     margin: 0;
@@ -136,6 +138,16 @@ footer div{
         transform: translate(0%, 0%);
     }
 }
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 
 /* Polices */
 

@@ -8,6 +8,7 @@
     justify-content: space-around;
   }
   .card{
+    animation: fadein .8s ease-out;
     color: white;
     width:300px;
     height:400px;
@@ -59,7 +60,7 @@
   }
   .front{
     z-index:1;
-    box-shadow: 5px 5px 5px #aaa;
+    box-shadow: 5px 5px 15px #00a0d579;
   }
   .back{
     box-shadow: 0 0 0 #aaa;
@@ -72,7 +73,7 @@
     box-shadow:0 0 0 #aaa;
   }
   .hovercard:hover .back{
-    box-shadow: 5px 5px 5px #aaa;
+    box-shadow: 5px 5px 15px #00a0d588;
   }
 
   .bottext{
