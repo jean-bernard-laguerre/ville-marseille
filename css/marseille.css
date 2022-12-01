@@ -19,7 +19,7 @@ body {
 
 header {
     z-index: 2;
-    height: 400px;
+    height: 35vh;
     justify-content: end;
     background-image: url(https://img.freepik.com/premium-vector/marseille-cityscape-france_250484-206.jpg?w=2000);
     background-size: contain;
