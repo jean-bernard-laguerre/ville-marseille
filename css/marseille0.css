@@ -3,12 +3,14 @@ section {
     padding: 1% 6%;
 }
 
-#informations {
-    min-height: 100vh;
-    background-image: url(https://tarpin-bien.com/wp-content/uploads/2022/10/Sortir-a-Marseille-sorties-Marseille.gif);
+body {
+    background-image: url("../images/accueil/Sortir-a-Marseille-sorties-Marseille.png");
     background-attachment: fixed;
     background-size: cover;
-    background-color: rgb(34, 34, 34);
+}
+
+#informations {
+    min-height: 100vh;
 }
 
 #Intro {
@@ -23,7 +25,7 @@ section {
 }
 
 #Intro iframe, #Intro h1 {flex: 1;}
-h3 {text-align: center;}
+h3, h2 {text-align: center;}
 #Intro h1 {
     text-align: center;
     font-size: clamp(2em ,4.5vw, 5em);
@@ -40,6 +42,7 @@ h3 {text-align: center;}
 #Info_Marseille article{
     box-shadow: 0px 0px 16px 5px rgb(0 0 0 / 7.5%);
     background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
     height: 400px;
     width: 300px;
     margin: 0 1% 5%;
@@ -48,10 +51,12 @@ h3 {text-align: center;}
 
 #actu {
     box-shadow: 0px -4px 16px 0px rgb(0 0 0 / 25%);
+    background-color: #e3f2fd;
 }
 
 #feed_actu{
     box-shadow: inset 12px 0px 8px 4px rgb(0 0 0 / 15%), inset -12px 0px 8px 4px rgb(0 0 0 / 10%);
+    background-color: white;
     display: flex;
     overflow-x: scroll;
     margin: 5%;
@@ -60,15 +65,17 @@ h3 {text-align: center;}
 }
 
 #actu article {
-    height: clamp(300px, fit-content, 900px);
-    width: clamp(200px, 20vw, 325px);
     box-shadow: 0px 0px 16px 5px rgb(0 0 0 / 7.5%);
-    min-width: 200px;
+    min-width: 250px;
     margin: 1% 3%;
 }
 
 #actu article img {
     width: 100%;
+}
+
+#actu article div {
+    margin: 0% 2%;
 }
 
 @media screen and (max-width : 1200px) {
@@ -84,15 +91,6 @@ h3 {text-align: center;}
     #Intro iframe {
         width: 100%;
         min-height: 40vh;
-    }
-}
-
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
     }
 }
 
