@@ -86,8 +86,13 @@ main{
     width: fit-content;
 }
 
-.img{
+.zoom{
     border-radius: 10px;
+    transition: .3s;
+}
+
+.zoom:hover{
+    transform: scale(0.9);
 }
 
 .div{
