@@ -1,142 +1,16 @@
-.flex {
-    display: flex;
-}
-
-.col {
-    flex-direction: column;
-}
-
 main {
-    flex: 1;
-}
-
-main {
-    flex: 1;
-}
-
-
-body {
-    font-family: 'roboto', 'sans-serif';
-    background-image: url();
-
-}
-
-.menu {
-    position: relative;
-    display: inline-block;
-    width: 160px;
-    height: 100%;
-}
-
-.menu_button {
-    transition: .3s;
-    background-color: inherit;
-    font-size: large;
-    color: inherit;
-    border: none;
-    width: 160px;
-    height: 100%;
-    padding: 2%;
-    margin: auto;
-}
-
-.menu_content {
-    animation: slide 300ms ease-in-out forwards;
-    transform-origin: top center;
-    display: none;
-    text-align: end;
-    position: absolute;
-    width: 160px;
-    right: 0;
-    background-color: rgb(15, 15, 15, 0.85);
-    box-shadow: 0px 16px 16px 0px rgb(0 0 0 / 25%);
-    z-index: 1;
-}
-
-.menu:hover .menu_button {
-    background-color: #00a1d5;
-    color: black;
-    transition: .3s;
-}
-
-.menu:hover .menu_content {
-    display: block;
-}
-
-.menu_content a {
-    display: block;
-    padding: 8%;
-    text-decoration: none;
-    color: inherit;
-}
-
-a:hover {
-    color: #00a1d5;
-}
-
-
-
-header {
-    z-index: 2;
-    height: 400px;
-    justify-content: end;
-    background-image: url(https://img.freepik.com/premium-vector/marseille-cityscape-france_250484-206.jpg?w=2000);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: white;
-    box-shadow: 0px 4px 16px 0px rgb(0 0 0 / 33%);
-}
-
-nav {
-    background-color: rgb(15, 15, 15, 0.85);
-    align-items: center;
-    justify-content: space-between;
-    color: azure;
-    max-width: 100%;
-    height: 60px;
-    position: sticky;
-    z-index: 8;
-    top: 0;
-}
-
-.navlogo {
-    padding: 0 3%;
-}
-
-.navlogo img {
-    height: 40px;
-    width: auto;
-    filter: drop-shadow(0px 0px 1px black);
-}
-
-
-.nav,
-.main {
-    padding: 20px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.nav-link {
-    display: block;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    padding: 4px 0;
-}
-
-.nav-link.current {
-    color: rgb(45, 173, 233);
+    background-image: url(https://a.travel-assets.com/findyours-php/viewfinder/images/res70/363000/363529-Musee-Dhistoire-De-Marseille.jpg);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .intro {
-    width: 300px;
+    width: 50%;
     background-color: aliceblue;
+    margin: auto;
+    padding: 2%;
 }
 
-a {
-    color: rgb(86, 178, 221);
-}
 
 p {
     text-align: center;
@@ -144,7 +18,6 @@ p {
 
 h1 {
     color: #111;
-    font-family: 'Helvetica Neue', sans-serif;
     font-size: 30px;
     font-weight: bold;
     letter-spacing: -1px;
@@ -155,7 +28,6 @@ h1 {
 h2,
 h3 {
     color: #111;
-    font-family: 'Open Sans', sans-serif;
     font-size: 30px;
     font-weight: 300;
     line-height: 32px;
@@ -163,9 +35,8 @@ h3 {
     text-align: center;
 }
 
-p {
+main p {
     color: #050503;
-    font-family: 'Helvetica Neue', sans-serif;
     font-size: 20px;
     line-height: 24px;
     margin: 0 0 24px;
@@ -182,39 +53,65 @@ div {
     text-align: center;
 }
 
+section{
+    margin: 2% 6%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 10px double rgba(206, 175, 0, 0.548);
+}
 
-.mba {}
+section img {
+    flex: 1;
+    max-width: 400px;
+}
 
-.mba img {
-    width: 300x;
+.mba {
+    flex: 1;
+    padding: 2%;
 }
 
 .mba p {
-    font: 'roboto' .2rem sans-serif;
     text-align: left;
 }
 
 
-footer {
-    min-height: 250px;
-    background-color: rgb(32, 32, 32);
-    box-shadow: 0px -4px 16px 0px rgb(0 0 0 / 25%);
-    justify-content: space-around;
-    align-items: center;
+.musées {
+    flex: 8;
 }
 
-footer div {
-    text-align: center;
-    align-items: center;
-    margin: 3% 0;
-    color: white;
-    min-width: 300px;
+aside {
+    flex: 2;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: whitesmoke;
+    min-width: 350px;
 }
 
-#Logo img {
-    height: 80px;
+aside div {
+    position: sticky;
+    top: 8%;
 }
 
-#Liens img {
-    height: 50px;
+li {
+    text-align: start;
+    list-style: none;
+}
+
+@media screen and (max-width:1200px) {
+    section {
+        flex-direction: column;
+    }
+    section img {
+        width: 100% !important;
+        max-width: none;
+    }
+    .intro {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    aside {
+        display: none !important;
+    }
 }
