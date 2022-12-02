@@ -50,11 +50,12 @@ main {
     color: white;
 }
 
-
+.table {overflow: auto;}
 table {
   width: 100%;
   text-align: center;
   border-spacing: 0;
+  overflow-y: scroll;
 }
 tr:nth-child(1) {
   background-color: #00a1d5;

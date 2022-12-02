@@ -3,9 +3,9 @@ body {
 }
 
 main img {
-    width: 600px;
-    max-height: 600px;
-    object-fit: cover;
+    width: 100%;
+    max-width: 600px;
+    object-fit: contain;
 }
 
 aside {
@@ -53,5 +53,17 @@ article {
 }
 
 article div{
+    flex: 1;
     padding: 0 2%;
+}
+
+article img {flex: 1;}
+
+@media screen and (max-width: 1400px) {
+    article {flex-direction: column;}
+    article img {width: 100%; max-width: none;}
+}
+
+@media screen and (max-width: 800px){
+    aside {display: none !important;}   
 }
